@@ -3,7 +3,7 @@ import java.io.*;
 
 public class SerializationDemo {
     public static void main(String[] args) {
-        Student student = new Student(101, "John Doe", 'A');
+        Student student = new Student(165, "Shubhangi Kumari", 'A');
         String filename = "student.ser";
 
         try (FileOutputStream fileOut = new FileOutputStream(filename);
@@ -30,4 +30,5 @@ public class SerializationDemo {
             System.out.println("Deserialized Object: \n" + deserializedStudent);
         }
     }
+
 }
